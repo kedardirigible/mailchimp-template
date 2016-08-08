@@ -320,6 +320,40 @@
 				color: #000f1c;
 			}
 
+
+		/**
+		* @tab Columns
+		* @section center column text
+		* @tip Set the styling for your email's center column content text. Choose a size and color that is easy to read.
+		*/
+		.centerColumnContent{
+			/*@editable*/ color:#505050;
+			/*@editable*/ font-family:Helvetica;
+			/*@editable*/ font-size:14px;
+			/*@editable*/ line-height:150%;
+			padding-top:0;
+			padding-right:20px;
+			padding-bottom:20px;
+			padding-left:20px;
+			/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column link
+			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
+			*/
+			.centerColumnContent a:link, .centerColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#093c71;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
+			}
+
+			.centerColumnContent a:hover {
+				color: #000f1c;
+			}
+
+
 			/**
 			* @tab Columns
 			* @section right column text
@@ -395,7 +429,7 @@
 			*/
 			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
 				/*@editable*/ color:#606060;
-				/*@editable*/ font-weight:bold;
+				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:none;
 			}
 
@@ -689,8 +723,8 @@
 																				<td align="center" valign="top" class="templateColumnContainer">
 																						<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																								<tr style="background-color: #093c71; height: 400px;">
-																										<td style="padding: 10px" align="center">
-																												<ul style="list-style: none; padding: 0; color: #FFFFFF; line-height: 30px;">
+																										<td align="center">
+																												<ul style="list-style: none; padding: 10px; color: #FFFFFF; line-height: 30px;">
 																													<li>Event 1</li>
 																													<li>Event 2</li>
 																													<li>Event 3</li>
@@ -715,6 +749,62 @@
 																	<!-- // END COLUMNS -->
 															</td>
 													</tr>
+													<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN COLUMNS // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+                                    	<tr mc:repeatable>
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td class="leftColumnContent">
+                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
+                                                            <h3>Repeatable Content</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td class="centerColumnContent">
+                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="centerColumnContent" mc:edit="center_column_content">
+                                                            <h3>Repeatable Content</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td class="rightColumnContent">
+                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
+                                                            <h3>Repeatable Content</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END COLUMNS -->
+                                </td>
+                            </tr>
+
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN FOOTER // -->
