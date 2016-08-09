@@ -51,21 +51,12 @@
 
 			/**
 			* @tab Page
-			* @section email border
-			* @tip Set the border for your email.
-			*/
-			#templateContainer{
-				/*@editable*/ border:1px solid #BBBBBB;
-			}
-
-			/**
-			* @tab Page
 			* @section heading 1
 			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
 			* @style heading 1
 			*/
 			h1{
-				/*@editable*/ color:#202020 !important;
+				/*@editable*/ color:#093c71 !important;
 				display:block;
 				/*@editable*/ font-family:Helvetica;
 				/*@editable*/ font-size:26px;
@@ -87,7 +78,7 @@
 			* @style heading 2
 			*/
 			h2{
-				/*@editable*/ color:#404040 !important;
+				/*@editable*/ color:#093c71 !important;
 				display:block;
 				/*@editable*/ font-family:Helvetica;
 				/*@editable*/ font-size:20px;
@@ -109,7 +100,7 @@
 			* @style heading 3
 			*/
 			h3{
-				/*@editable*/ color:#606060 !important;
+				/*@editable*/ color:#607D8C !important;
 				display:block;
 				/*@editable*/ font-family:Helvetica;
 				/*@editable*/ font-size:16px;
@@ -131,7 +122,7 @@
 			* @style heading 4
 			*/
 			h4{
-				/*@editable*/ color:#808080 !important;
+				/*@editable*/ color:#607D8C !important;
 				display:block;
 				/*@editable*/ font-family:Helvetica;
 				/*@editable*/ font-size:14px;
@@ -156,7 +147,7 @@
 			*/
 			#templatePreheader{
 				/*@editable*/ background-color:#F4F4F4;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				/*@editable*/ border-bottom: 1px solid #CCCCCC;
 			}
 
 			/**
@@ -180,7 +171,7 @@
 			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#606060;
 				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+				/*@editable*/ text-decoration:none;
 			}
 
 			/**
@@ -191,8 +182,6 @@
 			*/
 			#templateHeader{
 				/*@editable*/ background-color:#F4F4F4;
-				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
 			}
 
 			/**
@@ -233,7 +222,7 @@
 
 			#headerImage{
 				height:auto;
-				max-width:200px;
+				max-width:600px;
 			}
 
 			/* ========== Body Styles ========== */
@@ -245,8 +234,6 @@
 			*/
 			#templateBody{
 				/*@editable*/ background-color:#F4F4F4;
-				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
 			}
 
 			/**
@@ -260,9 +247,9 @@
 				/*@editable*/ font-family:Helvetica;
 				/*@editable*/ font-size:16px;
 				/*@editable*/ line-height:150%;
-				padding-top:20px;
+				padding-top:25px;
 				padding-right:20px;
-				padding-bottom:20px;
+				padding-bottom:25px;
 				padding-left:20px;
 				/*@editable*/ text-align:left;
 			}
@@ -274,8 +261,12 @@
 			*/
 			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#093c71;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
+			}
+
+			.bodyContent a:hover {
+				color: #000f1c;
 			}
 
 			.bodyContent img{
@@ -286,7 +277,7 @@
 
 			/* ========== Column Styles ========== */
 
-			.templateColumnContainer{width:260px;}
+			.templateColumnContainer{width:2ver 0px;}
 
 			/**
 			* @tab Columns
@@ -295,8 +286,6 @@
 			*/
 			#templateColumns{
 				/*@editable*/ background-color:#F4F4F4;
-				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
 			}
 
 			/**
@@ -323,9 +312,47 @@
 			*/
 			.leftColumnContent a:link, .leftColumnContent a:visited, /* Yahoo! Mail Override */ .leftColumnContent a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#093c71;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
 			}
+
+			.leftColumnContent a:hover {
+				color: #000f1c;
+			}
+
+
+		/**
+		* @tab Columns
+		* @section center column text
+		* @tip Set the styling for your email's center column content text. Choose a size and color that is easy to read.
+		*/
+		.centerColumnContent{
+			/*@editable*/ color:#505050;
+			/*@editable*/ font-family:Helvetica;
+			/*@editable*/ font-size:14px;
+			/*@editable*/ line-height:150%;
+			padding-top:0;
+			padding-right:20px;
+			padding-bottom:20px;
+			padding-left:20px;
+			/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column link
+			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
+			*/
+			.centerColumnContent a:link, .centerColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#093c71;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
+			}
+
+			.centerColumnContent a:hover {
+				color: #000f1c;
+			}
+
 
 			/**
 			* @tab Columns
@@ -351,8 +378,12 @@
 			*/
 			.rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#093c71;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
+			}
+
+			.rightColumnContent a:hover {
+				color: #000f1c;
 			}
 
 			.leftColumnContent img, .rightColumnContent img{
@@ -371,7 +402,6 @@
 			*/
 			#templateFooter{
 				/*@editable*/ background-color:#F4F4F4;
-				/*@editable*/ border-top:1px solid #FFFFFF;
 			}
 
 			/**
@@ -400,7 +430,11 @@
 			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
 				/*@editable*/ color:#606060;
 				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+				/*@editable*/ text-decoration:none;
+			}
+
+			.footerContent a:hover {
+				color: #000f1c;
 			}
 
 			/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
@@ -517,6 +551,8 @@
 					height:auto !important;
 					/*@editable*/ max-width:480px !important;
 					/*@editable*/ width:100% !important;
+					padding-left: 0 !important;
+					padding-right: 0 !important;
 				}
 
 				/**
@@ -537,6 +573,20 @@
 				.rightColumnContent{
 					/*@editable*/ font-size:16px !important;
 					/*@editable*/ line-height:125% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section right column text
+				* @tip Make the right column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.centerColumnContent{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				tr.events-listing {
+					height: auto !important;
 				}
 
 				/* ======== Footer Styles ======== */
@@ -585,7 +635,7 @@
                                 	<!-- BEGIN HEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
 																				<tr>
-																					<td align="center" valign="top">
+																					<td align="center" valign="top" >
 																						<img src="https://gallery.mailchimp.com/4404cde61977a8d342aba1e0c/images/331c9359-641f-44c9-9e7d-d80aebf03c90.png" style="max-width:400px; padding-top: 20px;" id="headerImage" mc:label="logo_image" mc:edit="logo_image" mc:allowdesigner mc:allowtext />
 																					</td>
 																				</tr>
@@ -605,7 +655,7 @@
 
                                         <tr>
                                             <td valign="top" class="headerContent" style="padding-top: 20px;">
-                                            	<img src="https://gallery.mailchimp.com/4404cde61977a8d342aba1e0c/images/4621552b-883b-46d6-b2c7-2d1534da7ea7.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<img src="https://gallery.mailchimp.com/4404cde61977a8d342aba1e0c/images/4621552b-883b-46d6-b2c7-2d1534da7ea7.jpg" style="max-width:100%;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
                                             </td>
                                         </tr>
                                     </table>
@@ -618,14 +668,9 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                         <tr>
                                             <td valign="top" class="bodyContent" mc:edit="body_content">
-                                                <h1>Designing Your Template</h1>
-                                                <h3>Creating a good-looking email is simple</h3>
-                                                Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content.
-                                                <br />
-                                                <br />
-                                                <h2>Styling Your Content</h2>
-                                                <h4>Make your email easy to read</h4>
-                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style.
+                                                <h1>An sit veritus quaestio aeque.</h1>
+                                                <h3> Sed tota soleat ex, te pri sint alienum.</h3>
+                                                Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire te, justo volutpat facilisis sea id. An eos meis malorum appareat, te per facer inimicus expetenda. Sed tota soleat ex, te pri sint alienum.
                                             </td>
                                         </tr>
                                     </table>
@@ -637,38 +682,32 @@
                                 	<!-- BEGIN COLUMNS // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
                                     	<tr mc:repeatable>
-                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="width: 600px;" >
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                 	<tr>
-                                                    	<td class="leftColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                    	<td style="padding-bottom: 20px;">
+                                                        	<img src="http://lorempixel.com/300/300/food" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                     	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br />
-                                                            <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                            <h3>Dining</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Dining Section</a> Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire te, justo volutpat facilisis sea id vim essent.
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
-                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                        	<td align="center" valign="top" class="templateColumnContainer">
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                 	<tr>
-                                                    	<td class="rightColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                    	<td style="padding-bottom: 20px;">
+                                                        	<img src="http://lorempixel.com/300/300/nature" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                     	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br />
-                                                            <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                            <h3>Spa</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Spa Section</a> Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire te, justo volutpat facilisis sea id vim essent.
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -678,6 +717,110 @@
                                     <!-- // END COLUMNS -->
                                 </td>
                             </tr>
+														<td align="center" valign="top">
+																<!-- BEGIN COLUMNS // -->
+																	<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+																		<tr mc:repeatable>
+																				<td align="center" valign="top" class="templateColumnContainer" >
+																						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																								<tr>
+																										<td style="padding-bottom: 20px;">
+																												<img src="http://lorempixel.com/400/400/nightlife" style="width:400px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+																											</td>
+																									</tr>
+																									<tr>
+																										<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
+																													<h3>Events</h3>
+																													<a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Events Section</a> Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire te, justo volutpat facilisis sea id vim essent.
+																											</td>
+																									</tr>
+																							</table>
+																					</td>
+																				<td align="center" valign="top" class="templateColumnContainer" style="width: 200px;">
+																						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																								<tr style="background-color: #093c71; height: 400px;" class="events-listing">
+																										<td align="center">
+																												<ul style="list-style: none; padding: 10px; color: #FFFFFF; line-height: 30px;">
+																													<li>Event 1</li>
+																													<li>Event 2</li>
+																													<li>Event 3</li>
+																													<li>Event 4</li>
+																													<li>Event 5</li>
+																													<li>Event 6</li>
+																													<li>Event 7</li>
+																													<li>Event 8</li>
+																												</ul>
+																											</td>
+																									</tr>
+																									<tr>
+																										<td style="padding-top: 20px" valign="top" class="rightColumnContent" mc:edit="right_column_content">
+																													<h3>Event Listing</h3>
+																													<a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Events Page</a> Lorem ipsum dolor sit vim essent.
+																											</td>
+																									</tr>
+																							</table>
+																					</td>
+																			</tr>
+																	</table>
+																	<!-- // END COLUMNS -->
+															</td>
+													</tr>
+													<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN COLUMNS // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+                                    	<tr mc:repeatable>
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px; width: 200px;">
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td class="leftColumnContent" style="padding-left:0; padding-right: 0;">
+                                                        	<img src="http://lorempixel.com/400/400/city" style="max-width:200px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
+                                                            <h3>Blog Post</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Post</a> Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td style="padding-bottom: 20px;">
+                                                        	<img src="http://lorempixel.com/400/400/nature" style="max-width:200px; padding-right: 5px; padding-left: 5px;" class="columnImage" mc:label="center_column_image" mc:edit="center_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="centerColumnContent" mc:edit="center_column_content">
+                                                            <h3>Blog Post</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Post</a> Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td class="rightColumnContent" style="padding-left:0; padding-right: 0;">
+                                                        	<img src="http://lorempixel.com/400/400/nightlife" style="max-width:200px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
+                                                            <h3>Blog Post</h3>
+                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Post</a> Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END COLUMNS -->
+                                </td>
+                            </tr>
+
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN FOOTER // -->
