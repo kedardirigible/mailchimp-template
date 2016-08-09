@@ -5,7 +5,7 @@
         <title>*|MC:SUBJECT|*</title>
         <style type="text/css">
 				<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-				<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+				<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 			/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
 			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
 			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
@@ -140,6 +140,11 @@
 				margin-bottom:10px;
 				margin-left:0;
 				/*@editable*/ text-align:left;
+			}
+
+			ul li {
+				/*@editable*/ font-family: 'Open Sans', sans-serif;
+				/*@editable*/ font-weight: 300;
 			}
 
 			/* ========== Header Styles ========== */
@@ -284,7 +289,7 @@
 
 			/* ========== Column Styles ========== */
 
-			.templateColumnContainer{width:2ver 0px;}
+			.templateColumnContainer{width:200px;}
 
 			/**
 			* @tab Columns
@@ -701,13 +706,13 @@
                                                     <tr>
                                                     	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
                                                             <h3>Dining</h3>
-                                                            <a href="https://www.theedgewater.com/dining-at-the-edgewater/" target="_blank">Dining Section</a> Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire te, justo volutpat facilisis sea id vim essent.
+                                                            Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire te, justo volutpat facilisis sea id vim essent.
                                                         </td>
                                                     </tr>
 																										<!-- START OF BUTTON -->
 																										<tr>
 																											<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-																														<a style="font-size: 14px; padding: 8px 35px; border: 2px solid #093c71; display: inline-block; text-transform: uppercase; font-weight: bold;" href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Dining Options</a>
+																														<a style="font-size: 14px; padding: 8px 35px; border: 2px solid #093c71; display: inline-block; text-transform: uppercase; font-weight: bold;" href="https://www.theedgewater.com/dining-at-the-edgewater/" target="_blank">Dining Options</a>
 																												</td>
 																										</tr>
 																										<!-- END OF BUTTON -->
@@ -723,13 +728,13 @@
                                                     <tr>
                                                     	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
                                                             <h3>Spa</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Spa Section</a> Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire te, justo volutpat facilisis sea id vim essent.
+                                                          	Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire te, justo volutpat facilisis sea id vim essent.
                                                         </td>
                                                     </tr>
 																										<!-- START OF BUTTON -->
 																										<tr>
 																											<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-																														<a style="font-size: 14px; padding: 8px 35px; border: 2px solid #093c71; display: inline-block; text-transform: uppercase; font-weight: bold;" href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Spa Services</a>
+																														<a style="font-size: 14px; padding: 8px 35px; border: 2px solid #093c71; display: inline-block; text-transform: uppercase; font-weight: bold;" href="https://www.theedgewater.com/spa/" target="_blank">Spa Services</a>
 																												</td>
 																										</tr>
 																										<!-- END OF BUTTON -->
@@ -744,44 +749,51 @@
 																<!-- BEGIN COLUMNS // -->
 																	<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
 																		<tr mc:repeatable>
-																				<td align="center" valign="top" class="templateColumnContainer" >
-																						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																				<td align="center" valign="top" class="templateColumnContainer" style="width: 380px;">
+																					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																							<tr style="background-color: #607D8C; height: 380px;" class="events-listing">
+																									<td align="left" style="padding: 25px;">
+																											<ul style="list-style: none; color: #F4F4F4; line-height: 25px; padding-left: 0; font-size: 11px; letter-spacing: .5px;">
+																												<li>Skipper Buds Ride Night: Aug 2</li>
+																												<li>Brewgrass Fridays: August 5</li>
+																												<li>Event 3</li>
+																												<li>Event 4</li>
+																												<li>Event 5</li>
+																												<li>Event 6</li>
+																												<li>Event 7</li>
+																												<li>Event 8</li>
+																											</ul>
+																										</td>
+																								</tr>
 																								<tr>
-																										<td style="padding-bottom: 20px;">
-																												<img src="https://unsplash.it/300?image=836" style="width:400px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
-																											</td>
-																									</tr>
-																									<tr>
-																										<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-																													<h3>Events</h3>
-																													<a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Events Section</a> Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire te, justo volutpat facilisis sea id vim essent.
-																											</td>
-																									</tr>
-																							</table>
+																									<td style="padding-top: 20px" valign="top" class="rightColumnContent" mc:edit="right_column_content">
+																												<h3>Upcoming</h3>
+																												List of upcoming events this month.
+																										</td>
+																								</tr>
+																						</table>
 																					</td>
-																				<td align="center" valign="top" class="templateColumnContainer" style="width: 200px;">
-																						<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																								<tr style="background-color: #093c71; height: 400px;" class="events-listing">
-																										<td align="center">
-																												<ul style="list-style: none; padding: 10px; color: #FFFFFF; line-height: 30px;">
-																													<li>Event 1</li>
-																													<li>Event 2</li>
-																													<li>Event 3</li>
-																													<li>Event 4</li>
-																													<li>Event 5</li>
-																													<li>Event 6</li>
-																													<li>Event 7</li>
-																													<li>Event 8</li>
-																												</ul>
-																											</td>
-																									</tr>
-																									<tr>
-																										<td style="padding-top: 20px" valign="top" class="rightColumnContent" mc:edit="right_column_content">
-																													<h3>Event Listing</h3>
-																													<a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Events Page</a> Lorem ipsum dolor sit vim essent.
-																											</td>
-																									</tr>
-																							</table>
+																				<td align="center" valign="top" class="templateColumnContainer">
+																					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																							<tr>
+																									<td style="padding-bottom: 20px;">
+																											<img src="https://unsplash.it/225/380?image=836" style="padding-left: 5px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+																										</td>
+																								</tr>
+																								<tr>
+																									<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
+																												<h3>Events</h3>
+																												Lorem ipsum dolor sit amet, soleat alienum ei mel, vim essent audire te, justo volutpat facilisis sea id vim essent.
+																										</td>
+																								</tr>
+																								<!-- START OF BUTTON -->
+																								<tr>
+																									<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
+																												<a style="font-size: 14px; padding: 8px 35px; border: 2px solid #093c71; display: inline-block; text-transform: uppercase; font-weight: bold;" href="https://www.theedgewater.com/events/" target="_blank">Calendar</a>
+																										</td>
+																								</tr>
+																								<!-- END OF BUTTON -->
+																						</table>
 																					</td>
 																			</tr>
 																	</table>
